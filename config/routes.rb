@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       get 'posts/index'
       get 'posts/show'
       get 'posts/create'
+      get 'posts/update'
       get 'posts/destroy'
     end
   end
