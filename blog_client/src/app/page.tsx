@@ -18,6 +18,6 @@ export async function getStaticProps() {
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function Home() {
+export default function Home({ posts }) {
   return <></>;
 }
