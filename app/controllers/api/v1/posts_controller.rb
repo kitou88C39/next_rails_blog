@@ -24,9 +24,15 @@ class Api::V1::PostsController < ApplicationController
   end
 
   def update
+    if @post.update(post_params)
+      render json: @post, status: :created
+    else
+      render json: @post.:errors, status: :unprocessable_entity
+    end
   end
 
   def destroy
+    @post.destory
   end
 
   private
